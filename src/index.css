@@ -1,16 +1,17 @@
 :root {
+  --blue-1: #0E0E1B;
+  --blue-2: #1C1C2F;
+  --blue-3: #00274F;
+  --blue-4: #004B96;
+  --blue-5: #036FDB;
+  --blue-6: #007DFA;
+  --gray-1: #888888;
+  --gray-2: #999999;
+  --gray-3: #CCCCCC;
+  --gray-4: #DDDDDD;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--blue-3);
 }
 
 body {

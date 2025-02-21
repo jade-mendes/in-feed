@@ -5,12 +5,12 @@ header {
     justify-content: center;
     gap: 1rem;
     height: 100px;
-    background-color: #0E0E1B;
+    background-color: var(--blue-1);
 }
 
 header h1 {
     font-size: 2rem;
-    color: #036FDB;
+    color: var(--blue-5);
     font-weight: 500;
 }
 
