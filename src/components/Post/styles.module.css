@@ -30,9 +30,35 @@
 }
 
 .postContent {
-    color: white;
+    color: var(--gray-3);
     font-size: 0.7rem;
     margin: 3%;
+}
+
+.feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3%;
+    margin-top: 5%;
+    gap: 2vw;
+}
+
+.feedbackContainer textarea {
+    height: 100px;
+    width: 100%;
+    background-color: var(--gray-4);
+    resize: none;
+    border-radius: 1vw;
+    outline: none;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 0.7rem;
+    padding: 1vw;
+}
+
+.feedbackContainer h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 h4 {

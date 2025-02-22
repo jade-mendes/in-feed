@@ -33,7 +33,7 @@ export default function Post({profilePicturePath, name, role} : PostProps){
 
             <div className={styles.feedbackContainer}>
                 <h4>Deixe seu feedback</h4>
-                <input type='text' placeholder='Escreva um comentário...'></input>
+                <textarea placeholder='Escreva um comentário...'></textarea>
                 <Button />
             </div>
         </div>
