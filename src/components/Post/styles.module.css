@@ -1,7 +1,7 @@
 .postContainer {
     background-color: var(--blue-1);
     width: 920px;
-    border-radius: 5%;
+    border-radius: 1vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding: 2%;
     margin: 2%;
