@@ -1,19 +1,24 @@
 import styles from './styles.module.css'
 import CommentForm from '../CommentForm'
+import CommentList from '../CommentList'
+import { Comment } from '../../types/Comment'
 
 interface PostProps {
     profilePicturePath: string
     name: string
     role: string
+    comments: Comment[];
 }
 
-export default function Post({profilePicturePath, name, role} : PostProps){
+
+export default function Post({profilePicturePath, name, role, comments} : PostProps){
+    
     return(
         <div className={styles.postContainer}>
 
             <div className={styles.postHeader}>
                 <div className={styles.opInfoContainer}>
-                    <img src={profilePicturePath} className={styles.opProfilePic}></img>
+                    <img src={profilePicturePath} className={styles.opProfilePic} alt='foto de perfil do autor do comentário'></img>
                     <div className={styles.opInfo}>
                         <h4>{name}</h4>
                         <h6>{role}</h6>
@@ -33,9 +38,7 @@ export default function Post({profilePicturePath, name, role} : PostProps){
 
             <CommentForm />
 
-            <div className={styles.commentList}>
-                
-            </div>
+            <CommentList comments={comments} profilePicturePath={''} name={''} content={''} />
              
         </div>
     )
