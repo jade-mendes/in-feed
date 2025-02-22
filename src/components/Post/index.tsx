@@ -1,6 +1,7 @@
 import Button from '../Button'
 import Comment from '../Comment'
 import styles from './styles.module.css'
+import teste from '../../assets/op3.jpeg'
 
 interface PostProps {
     profilePicturePath: string
@@ -37,8 +38,8 @@ export default function Post({profilePicturePath, name, role} : PostProps){
                 <textarea placeholder='Escreva um comentário...'></textarea>
                 <Button />
             </div>
-
-            <Comment />
+            {/* Teste */}
+            <Comment profilePicturePath={teste} name='Fulano' content='Ex rerum sunt et incidunt officia et veritatis deserunt'/> 
         </div>
     )
 }
