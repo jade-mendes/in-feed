@@ -1,0 +1,18 @@
+.likeButton {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 500;
+    color: white;
+    border: none;
+    background-color: var(--blue-1);
+}
+.liked {
+    color: var(--blue-5);
+}
+
+.icon {
+    color: var(--gray-2);
+    width: 20px;
+    height: 20px;
+}
