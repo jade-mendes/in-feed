@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    gap: 1%;
+    margin-left: 2vw;
 }
 
 .commentContainer img {
@@ -9,6 +11,10 @@
     width: 2.5rem;
     height: 2.5rem;
     object-fit: cover;
+}
+
+.bodyAndLikesContainer {
+    width: 100%;
 }
 
 .opInfo h4 {
@@ -36,7 +42,7 @@
     border-radius: 1vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding: 2%;
-    margin: 2%;
+    margin-bottom: 2%;
 }
 
 .commentBody p {

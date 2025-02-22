@@ -8,7 +8,7 @@ export default function Comment(){
     return (
         <div className={styles.commentContainer}>
             <img src={teste}></img>
-            <div>
+            <div className={styles.bodyAndLikesContainer}>
                 <div className={styles.commentBody}>
                     <div className={styles.commentHeader}>
                         <div className={styles.opInfo}>

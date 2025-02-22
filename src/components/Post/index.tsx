@@ -1,4 +1,5 @@
 import Button from '../Button'
+import Comment from '../Comment'
 import styles from './styles.module.css'
 
 interface PostProps {
@@ -36,6 +37,8 @@ export default function Post({profilePicturePath, name, role} : PostProps){
                 <textarea placeholder='Escreva um comentário...'></textarea>
                 <Button />
             </div>
+
+            <Comment />
         </div>
     )
 }
