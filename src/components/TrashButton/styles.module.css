@@ -1,0 +1,10 @@
+.trashButton {
+    border: none;
+    background-color: var(--blue-2);;
+}
+
+.icon {
+    color: var(--gray-2);
+    width: 20px;
+    height: 20px;
+}
