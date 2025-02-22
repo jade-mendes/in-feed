@@ -1,0 +1,53 @@
+.postContainer {
+    background-color: var(--blue-1);
+    width: 920px;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    margin: 2%;
+}
+
+.postHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opProfilePic {
+    border: 4px solid var(--blue-4);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
+.opInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.postContent {
+    color: white;
+    font-size: 0.7rem;
+    margin: 3%;
+}
+
+h4 {
+    color: white;
+    font-weight: 400;
+    margin: 0%;
+}
+
+h6 {
+    color: var(--gray-2);
+    font-weight: 300;
+    margin: 0%;
+}
+
+span {
+    color: white;
+    font-size: 0.5rem;
+}
