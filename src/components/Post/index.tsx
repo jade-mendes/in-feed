@@ -1,7 +1,5 @@
-import Button from '../Button'
-import Comment from '../Comment'
 import styles from './styles.module.css'
-import teste from '../../assets/op3.jpeg'
+import CommentForm from '../CommentForm'
 
 interface PostProps {
     profilePicturePath: string
@@ -21,7 +19,7 @@ export default function Post({profilePicturePath, name, role} : PostProps){
                         <h6>{role}</h6>
                     </div>
                 </div>
-                <span>Publicado há {}</span>
+                <span>Publicado há 2h</span>
             </div>
 
             <div className={styles.postContent}>
@@ -33,13 +31,12 @@ export default function Post({profilePicturePath, name, role} : PostProps){
                 </p>
             </div>
 
-            <div className={styles.feedbackContainer}>
-                <h4>Deixe seu feedback</h4>
-                <textarea placeholder='Escreva um comentário...'></textarea>
-                <Button />
+            <CommentForm />
+
+            <div className={styles.commentList}>
+                
             </div>
-            {/* Teste */}
-            <Comment profilePicturePath={teste} name='Fulano' content='Ex rerum sunt et incidunt officia et veritatis deserunt'/> 
+             
         </div>
     )
 }

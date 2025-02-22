@@ -1,5 +1,5 @@
-import bgImagePath from '../../assets/dev-profile-wallpaper.jpg'
-import profilePicPath from '../../assets/dev-profile-pic.jpg'
+import bgImagePath from '/assets/dev-profile-wallpaper.jpg'
+import profilePicPath from '/assets/dev-profile-pic.jpg'
 import styles from './styles.module.css'
 
 export default function DevProfile(){
