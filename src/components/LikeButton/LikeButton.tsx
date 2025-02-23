@@ -12,8 +12,8 @@ export default function LikeButton() {
   };
 
   return (
-    <button className={styles.likeButton} onClick={toggleLike}>
-      <ThumbsUp className={`${styles.icon} ${liked ? styles.liked : ""}`} />
+    <button className={`${liked ? styles.likeButtonClicked : styles.likeButton}`} onClick={toggleLike}>
+      <ThumbsUp className={`${liked ? styles.iconClicked : styles.icon}`} />
       Like • {likes}
     </button>
   );
