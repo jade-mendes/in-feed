@@ -18,7 +18,7 @@ export default function Post({profilePicturePath, name, role, comments: initialC
     function handleAddComment(newComment: string) {
         const newCommentObject: Comment = {
             id: comments.length + 1, 
-            profilePicturePath: '/assets/dev-profile-pic,jpg', 
+            profilePicturePath: '/assets/dev-profile-pic.jpg', 
             author: 'Jade Mendes', 
             content: newComment
         };
