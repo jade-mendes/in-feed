@@ -1,7 +1,7 @@
 import styles from './styles.module.css'
 import { Comment } from '../../types/Comment'
-import TrashButton from '../TrashButton'
-import LikeButton from '../LikeButton'
+import TrashButton from '../TrashButton/TrashButton'
+import LikeButton from '../LikeButton/LikeButton'
 
 interface CommentListProps {
     comments: Comment[]
@@ -25,11 +25,11 @@ export default function CommentList(props: CommentListProps){
                     <div className={styles.commentHeader}>
                         <div className={styles.opInfo}>
                             <h4>{comment.author}</h4>
-                            <span>Cerca de </span>
+                            <span>Cerca de 1h</span>
                         </div>
                         <TrashButton />
                     </div>
-                    <p>{comment.text}</p>
+                    <p>{comment.content}</p>
                 </div>
                 <LikeButton />
             </div>

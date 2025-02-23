@@ -1,4 +1,4 @@
-import Post from '../Post';
+import Post from '../Post/Post';
 import styles from './styles.module.css'
 import { Comment } from '../../types/Comment'
 
@@ -20,8 +20,8 @@ const posts: PostData[] = [
     name: 'Ron Ritchie', 
     role: 'Dev Back-end', 
     comments: [
-      { profilePicturePath: '/assets/op3.jpeg', id: 1, author: 'John Doe', text: 'Est aspernatur quis eos natus dicta et internos' },
-      { profilePicturePath: '/assets/op4.jpeg', id: 2, author: 'Alice Smith', text: 'Est aspernatur quis eos natus dicta et internos' }
+      { profilePicturePath: '/assets/op3.jpeg', id: 1, author: 'John Doe', content: 'Est aspernatur quis eos natus dicta et internos' },
+      { profilePicturePath: '/assets/op4.jpeg', id: 2, author: 'Alice Smith', content: 'Est aspernatur quis eos natus dicta et internos' }
     ] },
 ];
 

@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import styles from './styles.module.css'
-import CommentForm from '../CommentForm'
-import CommentList from '../CommentList'
+import CommentForm from '../CommentForm/CommentForm'
+import CommentList from '../CommentList/CommentList'
 import { Comment } from '../../types/Comment'
 
 interface PostProps {
@@ -11,8 +12,19 @@ interface PostProps {
 }
 
 
-export default function Post({profilePicturePath, name, role, comments} : PostProps){
-    
+export default function Post({profilePicturePath, name, role, comments: initialComments } : PostProps){
+    const [comments, setComments] = useState<Comment[]>(initialComments);
+
+    function handleAddComment(newComment: string) {
+        const newCommentObject: Comment = {
+            id: comments.length + 1, 
+            profilePicturePath: '/assets/dev-profile-pic,jpg', 
+            author: 'Jade Mendes', 
+            content: newComment
+        };
+        setComments([...comments, newCommentObject]);
+    }
+
     return(
         <div className={styles.postContainer}>
 
@@ -36,7 +48,7 @@ export default function Post({profilePicturePath, name, role, comments} : PostPr
                 </p>
             </div>
 
-            <CommentForm />
+            <CommentForm onAddComment={handleAddComment}/>
 
             <CommentList comments={comments} profilePicturePath={''} name={''} content={''} />
              
