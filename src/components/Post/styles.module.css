@@ -1,9 +1,9 @@
 .postContainer {
     background-color: var(--blue-1);
-    width: 920px;
+    max-width: 920px;
     border-radius: 1vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    padding: 2%;
+    padding: 3.5%;
     margin: 2%;
 }
 
@@ -32,7 +32,7 @@
 .postContent {
     color: var(--gray-3);
     font-size: 0.7rem;
-    margin: 3%;
+    margin-top: 5vh;
 }
 
 

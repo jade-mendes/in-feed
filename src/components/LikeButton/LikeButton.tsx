@@ -3,7 +3,7 @@ import { ThumbsUp } from "lucide-react";
 import styles from "./styles.module.css";
 
 export default function LikeButton() {
-  const [likes, setLikes] = useState(2);
+  const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
 
   const toggleLike = () => {

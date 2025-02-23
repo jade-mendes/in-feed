@@ -1,9 +1,14 @@
+.commentListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
 .commentContainer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 1%;
-    margin-left: 2vw;
 }
 
 .commentContainer img {

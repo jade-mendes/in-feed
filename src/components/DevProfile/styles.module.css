@@ -6,6 +6,7 @@
     justify-content: space-around;
     width: 356px;
     margin: 2%;
+    margin-top: 2vh;
     border-radius: 5%;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
