@@ -1,27 +1,27 @@
 import styles from './styles.module.css'
 import LikeButton from '../LikeButton/LikeButton'
 import TrashButton from '../TrashButton/TrashButton'
+import { Comment as CommentType } from "../../types/Comment";
 
 interface CommentProps {
-    profilePicturePath: string
-    name: string
-    content: string
+    comment: CommentType;
+    onDeleteComment: (commentId: number) => void;
 }
 
-export default function Comment({profilePicturePath, name, content} : CommentProps){
+export default function Comment({ comment, onDeleteComment }: CommentProps){
     return (
         <div className={styles.commentContainer}>
-            <img src={profilePicturePath}></img>
+            <img src={comment.profilePicturePath} alt='Foto de perfil'></img>
             <div className={styles.textAndLikesContainer}>
                 <div className={styles.commentBody}>
                     <div className={styles.commentHeader}>
                         <div className={styles.opInfo}>
-                            <h4>{name}</h4>
+                            <h4>{comment.author}</h4>
                             <span>Cerca de 1h</span>
                         </div>
-                        <TrashButton />
+                        <TrashButton onClick={() => onDeleteComment(comment.id)}/>
                     </div>
-                    <p>{content}</p>
+                    <p>{comment.content}</p>
                 </div>
                 <LikeButton />
             </div>

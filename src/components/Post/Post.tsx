@@ -11,7 +11,6 @@ interface PostProps {
     comments: Comment[];
 }
 
-
 export default function Post({profilePicturePath, name, role, comments: initialComments } : PostProps){
     const [comments, setComments] = useState<Comment[]>(initialComments);
 
@@ -24,6 +23,10 @@ export default function Post({profilePicturePath, name, role, comments: initialC
         };
         setComments([...comments, newCommentObject]);
     }
+
+    const handleDeleteComment = (commentId: number) => {
+        setComments((prev) => prev.filter((comment) => comment.id !== commentId));
+      };
 
     return(
         <div className={styles.postContainer}>
@@ -50,7 +53,7 @@ export default function Post({profilePicturePath, name, role, comments: initialC
 
             <CommentForm onAddComment={handleAddComment}/>
 
-            <CommentList comments={comments} profilePicturePath={''} name={''} content={''} />
+            <CommentList comments={comments} onDeleteComment={handleDeleteComment}/>
              
         </div>
     )
